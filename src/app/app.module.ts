@@ -4,8 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 // =material
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { ALL_MATERIAL } from './libs/material.index'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // =modules (keep RoutingModule at last - after all modules)
 import { LeavesModule } from './leaves/leaves.module';
@@ -18,15 +17,14 @@ import { AppComponent } from './app.component';
 
 
 @NgModule({
-  imports:      [ 
-    BrowserModule, 
-    FormsModule, 
-    BrowserAnimationsModule, 
-    ALL_MATERIAL,
+  imports: [
+    BrowserModule,
+    FormsModule,
+    BrowserAnimationsModule,
     SharedModule,
     RoutingModule
   ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
+  declarations: [AppComponent],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
