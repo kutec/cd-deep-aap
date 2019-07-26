@@ -5,7 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 export { LeavesComponent } from './leaves.component';
 
-import { SharedModule } from '../shared/shared.module';
+import { ALL_MATERIAL } from '../libs/material.index';
 
 
 export const LEAVES_ROUTES = [
@@ -15,9 +15,8 @@ export const LEAVES_ROUTES = [
 @NgModule({
   imports: [
     CommonModule,
-    SharedModule,
+    ALL_MATERIAL,
     RouterModule.forChild(LEAVES_ROUTES)
-
   ],
   declarations: [
     LeavesComponent
