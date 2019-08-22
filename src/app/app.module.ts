@@ -2,6 +2,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 // =material
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -14,6 +15,7 @@ import { SharedModule } from './shared/shared.module';
 
 // =project
 import { AppComponent } from './app.component';
+import { ApiService } from './_services/api.service';
 
 
 @NgModule({
@@ -21,10 +23,12 @@ import { AppComponent } from './app.component';
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     SharedModule,
     RoutingModule
   ],
   declarations: [AppComponent],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  providers: [ApiService]
 })
 export class AppModule { }
