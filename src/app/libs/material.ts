@@ -1,11 +1,13 @@
 import {
   MatButtonModule,
   MatCheckboxModule,
-  MatToolbarModule
+  MatToolbarModule,
+  MatSidenavModule
 } from '@angular/material';
 
 export const ALL_MATERIAL = [
   MatButtonModule,
   MatCheckboxModule,
-  MatToolbarModule
+  MatToolbarModule,
+  MatSidenavModule
 ]
