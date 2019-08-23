@@ -12,8 +12,8 @@ export class NavigationMainComponent implements OnInit {
   constructor(private apiService: ApiService) { }
 
   ngOnInit() {
-    this.apiService._API().subscribe((res) => {
-      console.log('nav: ',res)
+    this.apiService.getNavigation().subscribe(res => {
+      console.log('res', res)
     })
   }
 
